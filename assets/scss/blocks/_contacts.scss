@@ -1,0 +1,16 @@
+.contacts {
+    position: relative;
+    &__subtitle {
+        font-size: 20px;
+    }
+    &__map {
+        margin-bottom: 20px;
+    }
+}
+
+.dotted-line-up {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

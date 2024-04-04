@@ -1,0 +1,17 @@
+.burger {
+    width: 65px;
+    height: 32px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $main--color;
+    border-radius: 4px;
+    cursor: pointer;
+    >span {
+        display: block;
+        width: 48px;
+        height: 1px;
+        background-color: $accent-text-color;
+    }
+}

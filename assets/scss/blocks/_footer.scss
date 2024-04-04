@@ -1,0 +1,13 @@
+.footer {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.designer {
+    font-size: 12px;
+    margin: 8px 0 10px;
+    text-align: right;
+}

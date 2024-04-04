@@ -1,0 +1,42 @@
+.mobile-navigation {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 71px;
+}
+
+.logo {
+    width: 65px;
+    height: 40px;
+    >img {
+        object-fit: contain;
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    &__item {
+        width: 29px;
+        height: 29px;
+        margin-right: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            > a > svg > path {
+                transition: fill .3s linear;
+                fill: $main--color;
+            }
+        }
+        &--filled {
+            > a > svg > path {
+                fill: $main--color;
+            } 
+        }
+    }
+}

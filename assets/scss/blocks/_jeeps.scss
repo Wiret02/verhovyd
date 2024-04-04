@@ -1,0 +1,14 @@
+.jeeps {
+    &__item {
+        text-align: center;
+        &__img {
+            margin-bottom: 12px;
+        }
+        &__title{
+            font-size: 20px;
+        }
+        &__descr {
+            color: $main--color;
+        }
+    }
+}
