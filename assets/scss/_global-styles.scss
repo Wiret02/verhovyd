@@ -1,4 +1,5 @@
 @import "../scss/bootstrap-reboot.min.scss";
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import "variables";
 
 *, ul {
@@ -26,6 +27,7 @@ img {
 body {
     color: $accent-text-color;
     background-color: $main-bgc-color;
+    font-family: "Work Sans", sans-serif;
     font-size: 14px;
 }
 
@@ -48,6 +50,10 @@ h2 {
 
 h3 {
     font-size: 20px;
+}
+
+h1, h2 {
+    font-family: "Russo One", sans-serif;
 }
 
 p {
