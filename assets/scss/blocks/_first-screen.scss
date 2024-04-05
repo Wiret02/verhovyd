@@ -18,21 +18,28 @@
                 color: $main--color;
             }
         }
-        > img {
-            position: relative;
-            width: 100%;
-            border-radius: 5px;
-        }
-        .layout {
-            position: absolute;
-            background: #F26022;
-            border-radius: 5px;
-            top: 4px;
-            left: 5px;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-        }
+    }
+}
+
+.image__layout {
+    position: relative;
+    background-color: $main--color;
+    border-radius: 5px;
+    min-width: 315px;
+    min-height: 205px;
+    margin-left: 5px;
+    margin-top: 4px;
+    z-index: 0;
+    > img {
+        position: absolute;
+        border-radius: 5px;
+        bottom: 4px;
+        right: 5px;
+        z-index: 1;
+    }
+    &-jeeps {
+        min-width: 311px;
+        min-height: 234px;
     }
 }
 
