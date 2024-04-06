@@ -1,4 +1,7 @@
 .jeeps {
+    &__slider {
+        position: relative;
+    }
     &__item {
         text-align: center;
         &__img {
@@ -10,5 +13,51 @@
         &__descr {
             color: $main--color;
         }
+    }
+}
+
+.slick{
+    &-arrow {
+        position: absolute;
+        bottom: 0; //need 1-2px up, but idk if this will be rational
+        font-size: 0;
+        min-width: 65px;  //here i think may be problems
+        min-height: 37px; //here too
+        border: none;
+        cursor: pointer;
+        z-index: 1;
+    }
+    &-prev {
+        left: 0;
+        background: url(/assets/icons/arrow-left.svg) 0 0 / 100% no-repeat;
+    }
+    &-prev::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(/assets/icons/arrow-left-active.svg) 0 0 / 100% no-repeat;
+        opacity: 0;
+        transition: opacity 0.4s;
+    }
+    &-next {
+        right: 0;
+        background: url(/assets/icons/arrow-right.svg) 0 0 / 100% no-repeat;
+    }
+    &-next::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(/assets/icons/arrow-right-active.svg) 0 0 / 100% no-repeat;
+        opacity: 0;
+        transition: opacity 0.4s;
+    }
+    &-arrow:hover::before {
+        opacity: 1;
     }
 }

@@ -7,4 +7,11 @@ $(document).ready(function(){
         autoplaySpeed: 5000,
         arrows: false
     });
+    $('.jeeps__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 7000,
+    });
 });
