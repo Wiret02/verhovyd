@@ -1,8 +1,12 @@
 .jeeps {
     &__slider {
         position: relative;
+        margin-left: -15px;
+        margin-right: -15px;
     }
     &__item {
+        margin-left: 15px;
+        margin-right: 15px;
         text-align: center;
         &__img {
             margin-bottom: 12px;
@@ -19,10 +23,10 @@
 .slick{
     &-arrow {
         position: absolute;
-        bottom: 0; //need 1-2px up, but idk if this will be rational
+        bottom: 0;
         font-size: 0;
-        min-width: 65px;  //here i think may be problems
-        min-height: 37px; //here too
+        width: 65px;
+        height: 37px;
         border: none;
         cursor: pointer;
         z-index: 1;

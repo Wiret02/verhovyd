@@ -10,8 +10,6 @@ $(document).ready(function(){
     $('.jeeps__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 7000,
+        infinite: true
     });
 });
